@@ -1,4 +1,6 @@
 jQuery(document).ready(function ($) {
+
+    //search bar hover
     $("#search-trigger").on("mouseover", function (e) {
 
 
@@ -21,7 +23,7 @@ jQuery(document).ready(function ($) {
         }, "slow");
     });
 
-    //instagram feed nel profilo
+    //instagram feed widget
     var Feed = new Instafeed({
         get: 'user',
         userId: '6251195013',
@@ -46,6 +48,7 @@ jQuery(document).ready(function ($) {
     });
 
     Feed.run();
+    //inizializza masonry x il widget instagram
     jQuery(window).load(function () {
         var instafeed = document.querySelector('.instafeedrow');
         var instafeedmsnr = new Masonry(instafeed, {

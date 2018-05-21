@@ -1,4 +1,4 @@
-//tipografia
+/*tipografia
 p,
 a,
 li,
@@ -9,6 +9,7 @@ h4,
 h5 {
     font-family: 'Source Serif Pro', serif;
 }
+*/
 
 // search box
 #search-field {
@@ -25,12 +26,11 @@ h5 {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Source Serif Pro', serif;
 }
 
 
-/*-- INSTAFEED */
-
+// widget instagram
 .instafeedrow {
     margin-top: 25px;
 }
@@ -93,3 +93,49 @@ body {
     height: 0;
     transition: .5s ease;
 }
+
+//profile
+
+$pinterest-color: #C92228;
+$instagram-color: #b82db8;
+$facebook-color: #3b5999;
+
+.card-link {
+    margin-bottom: 25px;
+
+    .fa {
+        margin: 0 1em;
+        font-size: 1.6em;
+
+        &:focus,
+        &:hover {
+            text-decoration: none;
+        }
+
+        &.fa-pinterest {
+            color: $pinterest-color;
+            font-weight: bold;
+
+            &:hover {
+                color: darken($pinterest-color, 10%);
+            }
+        }
+
+        &.fa-instragram {
+            color: $instagram-color;
+
+            &:hover {
+                color: darken($instagram-color, 10%);
+            }
+        }
+
+        &.fa-facebook {
+            color: $facebook-color;
+
+            &:hover {
+                color: darken($facebook-color, 10%);
+            }
+        }
+    }
+}
+

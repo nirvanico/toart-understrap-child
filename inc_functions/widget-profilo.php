@@ -30,30 +30,30 @@ class Foo_Widget extends WP_Widget {
 			echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
 		}
 		//echo esc_html__( 'Hello, World!', 'text_domain' ); ?>
-        <div class="card border-0">
-            <img class="rounded-circle mx-auto" src="http://via.placeholder.com/200x200" alt="Card image cap">
+    <div class="card border-0">
+        <img class="rounded-circle mx-auto" src="http://via.placeholder.com/200x200" alt="Card image cap">
 
 
-            <div class="card-body">
-                <h4 class="card-title text-center">My Profile</h4>
-                <div class="card-link d-flex justify-content-center">
-                    <div class="p-2"><i class="fa fa-pinterest" aria-hidden="true"></i>
-                    </div>
-                    <div class="p-2"><i class="fa fa-instagram" aria-hidden="true"></i>
-                    </div>
-                    <div class="p-2"><i class="fa fa-facebook" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="card-text">
-                    <p class="text-center font-italic">Questo è un testo di esempio</p>
-                </div>
+        <div class="card-body">
+            <h4 class="card-title text-center">My Profile</h4>
+            <div class="card-link d-flex justify-content-center">
+                <a class="fa fa-pinterest" aria-hidden="true" href="pinterest.com"></a>
+
+                <a class="fa fa-instagram" aria-hidden="true" href="instagram.com"></a>
+
+                <a class="fa fa-facebook" aria-hidden="true" href="facebook.com"></a>
+
             </div>
-
-
-
+            <div class="card-text">
+                <p class="text-center font-italic">Questo è un testo di esempio</p>
+            </div>
         </div>
 
-        <?php echo $args['after_widget'];
+
+
+    </div>
+
+    <?php echo $args['after_widget'];
 	}
 
 	/**
@@ -66,11 +66,11 @@ class Foo_Widget extends WP_Widget {
 	public function form( $instance ) {
 		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'New title', 'text_domain' );
 		?>
-        <p>
-            <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Title:', 'text_domain' ); ?></label>
-            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
-        </p>
-        <?php
+    <p>
+        <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Title:', 'text_domain' ); ?></label>
+        <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+    </p>
+    <?php
 	}
 
 	/**

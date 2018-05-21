@@ -40,4 +40,6 @@ require_once 'inc_functions/widget-custom-recentpost.php';
 
 require_once 'inc_functions/widget-instagram.php';
 
-// fine widget
+//parti di template personalizzate
+
+require_once 'inc_functions/custom-post-nav.php';
