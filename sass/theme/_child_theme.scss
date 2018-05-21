@@ -1,0 +1,95 @@
+//tipografia
+p,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Source Serif Pro', serif;
+}
+
+// search box
+#search-field {
+    display: none;
+
+}
+
+#search-close {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+/*-- INSTAFEED */
+
+.instafeedrow {
+    margin-top: 25px;
+}
+
+.insta-item {
+    width: 33.333%;
+}
+
+.insta-item {
+    float: left;
+}
+
+.insta-item img {
+    display: block;
+    max-width: 100%;
+}
+
+
+.insta-item:hover .insta-overlay {
+
+    height: 100%;
+    opacity: 0.9;
+
+
+}
+
+.insta-item:hover .insta-middle {
+
+    opacity: 1;
+
+
+}
+
+.insta-likes {
+    color: #fff;
+    font-size: 20px;
+}
+
+.insta-middle {
+    opacity: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: orange;
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.insta-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
