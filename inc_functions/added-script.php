@@ -28,3 +28,14 @@ function instafeed_script() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'instafeed_script' );
+
+//  script di timeline
+
+function timeline_script() {
+    wp_enqueue_script(
+        'timeline.min',
+        get_stylesheet_directory_uri() . '/js/timeline.min.js',
+        array( 'jquery' )
+    );
+}
+add_action( 'wp_enqueue_scripts', 'timeline_script' );

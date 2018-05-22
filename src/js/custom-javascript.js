@@ -15,6 +15,7 @@ jQuery(document).ready(function ($) {
     });
     $("#search-field").on("mouseleave", function (e) {
         $("#search-field").fadeOut();
+
         $("#search-trigger").animate({
             right: "30px",
             opacity: 1,
@@ -63,4 +64,9 @@ jQuery(document).ready(function ($) {
         $instafeed.instafeedmsnr();
     });
 
+    //timeline script
+    jQuery('.timeline').timeline({
+        verticalStartPosition: 'right',
+        verticalTrigger: '30px'
+    });
 });
