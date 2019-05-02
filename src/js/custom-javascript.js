@@ -28,8 +28,8 @@ jQuery(document).ready(function ($) {
     var Feed = new Instafeed({
         get: 'user',
         userId: '6251195013',
-        clientId: '77a5cbd5ab584ffba026cfc3bfce2925',
-        accessToken: '6251195013.1677ed0.5130e42cefbb41c8b7980256a6890152',
+        clientId: '',
+        accessToken: '',
         resolution: 'standard_resolution',
         sortBy: 'most-liked',
         limit: 10,
